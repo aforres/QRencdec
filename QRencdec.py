@@ -1,6 +1,6 @@
 import streamlit as st
 import qrcode
-from PIL import Image
+# from PIL import Image
 # from PIL import Image 
 # from Pillow import Image 
 # Pillow added 20240824
