@@ -1,10 +1,9 @@
 streamlit
-PyPDF2
 qrcode
 PIL
+Pillow
 datetime
 hashlib
-cryptography.fernet
 opencv
 os
 time
