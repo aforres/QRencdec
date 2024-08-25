@@ -1,5 +1,4 @@
 import streamlit as st
-import cv2 as cv
 
 st.header("QRcodePlus - Run Encode and then Decode")
 raw_text = st.text_area("Text here") 
