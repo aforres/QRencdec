@@ -1,7 +1,6 @@
 import streamlit as st
 import qrcode
-import pillow
-import Image
+from PIL import Image
 import cv2 as cv
 
 st.header("QRcodePlus - Run Encode and then Decode")
