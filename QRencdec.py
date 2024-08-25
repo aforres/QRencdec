@@ -3,7 +3,7 @@ import qrcode
 # from PIL import Image 
 # from Pillow import Image 
 # Pillow added 20240824
-# import Image
+import PIL #Image
 import cv2 as cv
 
 st.header("QRcodePlus - Run Encode and then Decode")
