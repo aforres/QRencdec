@@ -20,7 +20,7 @@ def testfn():
     img = qr.make_image(fill_color="black",
                         back_color="white").convert('RGB')
     img.save("image_folder/sample.png","w+b")
-    st.image("sample.png")
+    st.image("image_folder/sample.png")
 
 
 if st.button('Click Me'):
