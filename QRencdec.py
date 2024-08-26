@@ -1,10 +1,10 @@
 import streamlit as st
 import qrcode
 
-st.header("QRCode+ - enter message to be encoded")
+st.header("QRCode+ - ecoder")
 
 def testfn():
-    raw_text = st.text_area("Enter message here:") 
+    raw_text = st.text_area("Enter message here and click button") 
     
     qr = qrcode.QRCode(
         version=1,
@@ -23,7 +23,7 @@ def testfn():
     st.image("sample.png")
 
 
-if st.button('click mr'):
+if st.button('Click Me'):
     testfn()
 
 
