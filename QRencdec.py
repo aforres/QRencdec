@@ -19,8 +19,8 @@ def testfn():
     
     img = qr.make_image(fill_color="black",
                         back_color="white").convert('RGB')
-    img.save("./QRencdec/image_folder/sample.png")
-    st.image("./QRencdec/image_folder/sample.png")
+    img.save("./QRencdec/image_folder/sample.png","w+b")
+    st.image("sample.png")
 
 
 if st.button('Click Me'):
