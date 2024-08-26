@@ -1,5 +1,5 @@
 import streamlit as st
-import qrcode
+import qrcode as qr
 
 st.header("QRCode+ - enter message to be encoded")
 raw_text = st.text_area("Enter message here:") 
