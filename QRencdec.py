@@ -2,7 +2,7 @@ import streamlit as st
 import qrcode
 import cv2 as cv
 
-st.header("QRcodePlus - Run Encode and then Decode")
+st.header("QRcodePlus - Run QR Encode")
 raw_text = st.text_area("Text here") 
 
 qr = qrcode.QRCode(
@@ -25,26 +25,26 @@ st.image("sample.png")
 
 
 
-im = cv.imread('sample.png')
-det = cv.QRCodeDetector()
-retval, points, straight_qrcode = det.detectAndDecode(im)
+# im = cv.imread('sample.png')
+# det = cv.QRCodeDetector()
+# retval, points, straight_qrcode = det.detectAndDecode(im)
 
-logo_display = Image.open('profile.png')
+# logo_display = Image.open('profile.png')
 
-logo_display.thumbnail((60,60))
+# logo_display.thumbnail((60,60))
 
-logo_pos = ((img.size[0] - logo_display.size[0]) // 2,
-            (img.size[1] - logo_display.size[1]) // 2)
+# logo_pos = ((img.size[0] - logo_display.size[0]) // 2,
+#             (img.size[1] - logo_display.size[1]) // 2)
 
-img.paste(logo_display, logo_pos)
+# img.paste(logo_display, logo_pos)
 
-print(retval)
-img.save("sample2.png")
-st.image("sample2.png")
-st.write(retval)
+# print(retval)
+# img.save("sample2.png")
+# st.image("sample2.png")
+# st.write(retval)
 
 
-#st.button('Encode and Decode', on_click=run_encode(raw_text))
+# #st.button('Encode and Decode', on_click=run_encode(raw_text))
 
 
                 
