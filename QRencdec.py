@@ -22,25 +22,25 @@ st.image("sample.png")
 
 
 
-   
 
-    # im = cv.imread('sample.png')
-    # det = cv.QRCodeDetector()
-    # retval, points, straight_qrcode = det.detectAndDecode(im)
 
-    # logo_display = Image.open('profile.png')
-    
-    # logo_display.thumbnail((60,60))
+im = cv.imread('sample.png')
+det = cv.QRCodeDetector()
+retval, points, straight_qrcode = det.detectAndDecode(im)
 
-    # logo_pos = ((img.size[0] - logo_display.size[0]) // 2,
-    #             (img.size[1] - logo_display.size[1]) // 2)
+logo_display = Image.open('profile.png')
 
-    # img.paste(logo_display, logo_pos)
+logo_display.thumbnail((60,60))
 
-    # print(retval)
-    # img.save("sample2.png")
-    # st.image("sample2.png")
-    # st.write(retval)
+logo_pos = ((img.size[0] - logo_display.size[0]) // 2,
+            (img.size[1] - logo_display.size[1]) // 2)
+
+img.paste(logo_display, logo_pos)
+
+print(retval)
+img.save("sample2.png")
+st.image("sample2.png")
+st.write(retval)
 
 
 #st.button('Encode and Decode', on_click=run_encode(raw_text))
